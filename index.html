@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arnold Personal Blog</title>
+
+    <link rel="stylesheet" href="css/boostrap/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div w3-include-html="/includes/navbar.html"></div>
+
+    <!--welcome -->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h1> ThePost</h1>
+        </div>
+      </div>
+    </div>
+    <!--End Welcome-->
+
+
+
+
+    <!--Carousel-->
+    <div class="container-fluid" id="slider-container" >
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/images/cultureimg.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Culture</h3>
+        Culture can be defined as the set of shared beliefs, values, customs, traditions, behaviors, symbols, and artifacts that are transmitted from one generation to another within a particular group or society. It encompasses the way of life of a community, including its language, religion, social structures, norms, rituals, arts, cuisine, and other aspects of human expression. Culture shapes individuals' perceptions, attitudes, and behaviors, influencing how they interact with others and navigate the world around them. It is dynamic and ever-evolving, subject to change through interactions with other cultures, environmental factors, historical events, and technological advancements. Overall, culture serves as a foundation for identity, providing a sense of belonging and cohesion within a group while also fostering diversity and enriching human experience
+        <p> </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/images/tech11.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Technology</h3>
+        <p>Technology refers to the application of scientific knowledge, tools, techniques, and processes for practical purposes, typically to solve problems, accomplish tasks, or improve efficiency and effectiveness in various domains. It encompasses a wide range of artifacts, systems, methods, and processes that are designed, developed, and utilized to meet specific needs or objectives
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/images/comp6.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h3>Business</h3>
+        <p>Business refers to the organized effort of individuals or groups to produce goods or services and exchange them for profit or other benefits. It encompasses various activities, including production, marketing, sales, finance, and management, aimed at generating revenue and creating value for stakeholders.
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+        </div>
+      </div>
+    </div>
+     <!--End Carousel-->
+
+
+     <!--Form-->
+
+     <div class="container" id="form">
+      <div class="row">
+        <div class="col">
+           
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">State</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+
+          <div class="col"></div>
+          <div class="col"></div>
+      </div>
+     </div>
+    
+     <!--end form-->
+   
+  
+
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div id="icons">
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"> <img src="https://img.icons8.com/fluency/48/null/instagram-new.png" />  </i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"><img src="https://img.icons8.com/cute-clipart/64/null/twitter.png" /> </i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class=" fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>ThePOST
+          </h6>
+          <p>
+           Updating you with the latest Information
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">News</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Adverts</a>
+          </p>
+       
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            E-mails
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">arnolduwamz7@gmail.com</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">gashimoto72@gmail.com</a>
+          </p>
+         
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-phone me-3"></i> +256 761 090722</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Kampala- Uganda.
+          </p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-reset fw-bold" href="index.html">ThePost</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
+         
+    <script src="css/boostrap/js/bootstrap.bundle.js"></script>
+
+    <script src="/js/include.js"></script>
+  </body>
+</html>
