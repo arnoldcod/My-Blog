@@ -38,6 +38,11 @@ margin-top: auto;
     padding-right: 0px;
 }
 
+.image-size {
+    width: 400px;
+    height: 400px;
+}
+
 form #form-id {
     width: 10px;
     height: 20px;
